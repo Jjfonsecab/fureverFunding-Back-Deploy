@@ -29,6 +29,7 @@ public class Users implements UserDetails {
     private String rrs_ig;
     private String place;
     private String photo;
+    @Embedded
     private Role role;
 
     @Override
