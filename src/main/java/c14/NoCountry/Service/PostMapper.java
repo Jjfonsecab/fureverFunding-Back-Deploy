@@ -16,7 +16,7 @@ public class PostMapper {
                 .name(post.getName())
                 .data(post.getData())
                 .image(post.getImage())
-                .user(post.getUser())
+                .userId(post.getId())
                 .build();
     }
 
