@@ -1,12 +1,15 @@
 package c14.NoCountry.Controller;
 
+import c14.NoCountry.Entity.Post;
 import c14.NoCountry.Entity.Users;
 import c14.NoCountry.Service.UserService;
 import c14.NoCountry.dto.LoginRequestDto;
 import c14.NoCountry.dto.UserAdminRegister;
 import c14.NoCountry.dto.UserCreatorRegister;
 import c14.NoCountry.dto.UserDonorRegister;
+import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
@@ -18,7 +21,6 @@ import java.util.Optional;
 @RestController
 @RequestMapping("/user")
 @RequiredArgsConstructor
-@CrossOrigin
 public class UserController {
 
     private final UserService userService;

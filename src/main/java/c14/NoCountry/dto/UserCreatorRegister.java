@@ -1,5 +1,6 @@
 package c14.NoCountry.dto;
 
+import c14.NoCountry.Entity.Role;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.Size;
 import lombok.AllArgsConstructor;

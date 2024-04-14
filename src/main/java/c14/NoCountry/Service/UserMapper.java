@@ -1,8 +1,10 @@
 package c14.NoCountry.Service;
 
+import c14.NoCountry.Entity.Post;
 import c14.NoCountry.Entity.Role;
 import c14.NoCountry.Entity.Users;
 import c14.NoCountry.dto.*;
+import org.springframework.security.core.userdetails.User;
 import org.springframework.stereotype.Service;
 
 @Service

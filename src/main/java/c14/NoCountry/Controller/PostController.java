@@ -3,6 +3,7 @@ package c14.NoCountry.Controller;
 import c14.NoCountry.Service.PostService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
@@ -16,6 +17,7 @@ import java.util.stream.Collectors;
 @RestController
 @RequestMapping("/post")
 @RequiredArgsConstructor
+@CrossOrigin
 public class PostController {
 
     private final PostService postService;
